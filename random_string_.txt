@@ -1,0 +1,28 @@
+Here’s a self check that really covers everything so far. You may have heard of the infinite monkey theorem? 
+The theorem states that a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time will almost
+ surely type a given text, such as the complete works of William Shakespeare. Well, suppose we replace a monkey with a Python function. How long do you think it would take for a Python function to generate just one sentence of Shakespeare? The sentence we’ll shoot for is: “methinks it is like a weasel”
+
+You’re not going to want to run this one in the browser, so fire up your favorite Python IDE. The way we’ll simulate this is to write a function that generates a string that is 28 characters long by choosing random letters from the 26 letters in the alphabet plus the space. We’ll write another function that will score each generated string by comparing the randomly generated string to the goal.
+
+A third function will repeatedly call generate and score, then if 100% of the letters are correct we are done. If the letters are not correct then we will generate a whole new string.To make it easier to follow your program’s progress this third function should print out the best string generated so far and its score every 1000 tries.
+
+main checks for true or false from generate score. 
+
+rand_string based on params:
+@params length of string
+randomly get a character from the alphabet
+randonly insert a space
+compare to: "methinks it is a like a weasel"
+    #generate random into between 0 and 25, 25 a - z
+    #change alph data structure so we can get letter
+    #get letter or space at rand generated and insert into phrase car at position. 
+
+
+generate score function returns true or false. 
+Checks to see 100% of letters are correct then we are done
+if not correct print out an entire new string
+print score everyone 1000 tries (need to keep track of these)
+
+score 
+amount char current/len * 100%
+check each character
